@@ -1,6 +1,6 @@
 {
   "name": "not-null",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Return the first argument that is `!= null`",
   "main": "index.js",
   "scripts": {
