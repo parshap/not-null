@@ -25,13 +25,9 @@ npm install not-null
 ``` js
 var notnull = require('not-null');
 var opts = { y : false, w : 4, z: null };
-var x = defined(opts.z, opts.x, opts.y, opts.w, 100);
+var x = notnull(opts.z, opts.x, opts.y, opts.w, 100);
 console.log(x);
-```
-
-```
-$ node example/defined.js
-false
+// -> false
 ```
 
 The return value is `false` because `false` is the first item that is
@@ -40,7 +36,7 @@ The return value is `false` because `false` is the first item that is
 ## API
 
 ``` js
-var notnull = require('notnull')
+var notnull = require('not-null')
 ```
 
 ### `var x = notnull(a, b, c...)`
